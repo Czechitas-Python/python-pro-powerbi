@@ -1,8 +1,0 @@
-title: Python pro Power BI
-link: python-pro-power-bi
-brief: Materiály k půldennímu workshopu Python pro Power BI.
-lessons:
-  - title: Python a Power BI
-    link: power-bi
-    brief: Vyzkoušíme si využití Pythonu v interaktivním prostředí pro vizualizace Power BI.
-
