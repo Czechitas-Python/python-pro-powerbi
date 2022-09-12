@@ -2,4 +2,5 @@ title: Python pro Power BI
 lead: Jaké zdroje dat umí Power BI načíst a jak při načítání a transformacích využít Python
 sections:
   - vizualizace
+  - excs
   
