@@ -1,3 +1,5 @@
+## Python a Power BI
+
 Před začátkem práce je vhodné zkontrolovat nastavení Power BI a propojení s jazykem Python.
 
 ### Nastavení

@@ -54,9 +54,3 @@ for i in range(df_actual_pivot.shape[0]):
                        ha="center", va="center", color="w")
 plt.show()
 ```
-
-## Cvičení
-::exc[excs>krabicovy-graf]
-
-## Bonusové cvičení
-::exc[excs>dalsi-vizualizace]

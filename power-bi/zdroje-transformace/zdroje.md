@@ -1,3 +1,5 @@
+## Zdroje
+
 Power BI obsahuje samostatnou komponentu Power Query, která slouží pro zpracování dat. Prvním krokem je jejich načtení a získání. Power BI podporuje řadu různých zdrojů:
 
 - soubory (např. ve formátu CSV, XML nebo JSON),
@@ -40,10 +42,3 @@ Graf je dále vhodné vylepšit přidáním popisků os a titulku. Obojí lze pr
 
 ![format_visual](assets/format_visual.png){.fig}
 
-## Cvičení
-::exc[excs>legenda]
-::exc[excs>donut]
-::exc[excs>funnel]
-
-## Bonusové cvičení
-::exc[excs>barvy]
