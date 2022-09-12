@@ -1,3 +1,5 @@
+## Transformace
+
 Uzavřené smlouvy jsou často porovnávány s plánem, aby bylo jasné, zda hodnoty uzavřených kontraktů dosahují požadové úrovně. Tabulka s plánem tržeb je ke stažení [zde](https://raw.githubusercontent.com/pesikj/progr2-python/master/python-pro-data-1/power-bi/assets/sales_plan.csv). Tabulku importujeme do Power BI jako nový zdroj.
 
 Tabulka má data zadaná jako čísla - číslo roku a číslo měsíce. Abychom mohli zobrazit obě hodnoty v jednom grafu, potřebujeme k tabulce s plánem přidat datum. Kliknutím na tlačítko `Transform data` otevřeme nástroj Power Query, kde můžeme provádět různé transformace dat.
@@ -55,9 +57,3 @@ agregace budou vypočteny automaticky při tvorbě vizualizací. Proto klikneme 
 
 ![editace_skriptu](assets/editace_skriptu.png){.fig}
 
-## Cvičení
-::exc[excs>registrace]
-::exc[excs>registrace-2]
-
-## Bonusová cvičení
-::exc[excs>registrace-3]

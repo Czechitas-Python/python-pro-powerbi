@@ -1,9 +1,6 @@
 ## Cvičení
+::exc[excs>registrace]
+::exc[excs>registrace-2]
 
-## Cvičení
-::exc[excs>legenda]
-::exc[excs>donut]
-::exc[excs>funnel]
-
-## Bonusové cvičení
-::exc[excs>barvy]
+## Bonusová cvičení
+::exc[excs>registrace-3]
