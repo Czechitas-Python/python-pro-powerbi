@@ -16,7 +16,7 @@ Jako poslední krok spojíme obě tabulky dohromady. Nejjednodušší je použit
 
 Nyní můžeme přidat vizualizaci `Lined and Stacked column chart` a porovnat, nakolik se obchodníkům daří plnit obchodní plán.
 
-::fig[Notebook]{src=assets/sales_plan_vs_actual.png size=40}
+::fig[Notebook]{src=assets/sales_plan_vs_actual.png size=70}
 
 ### Využití Pythonu jako zdroje
 
@@ -26,11 +26,11 @@ Ve skupině `Other` vybereme jako zdroj `Python script`. Budeme opět využívat
 
 Po stisknutí tlačítka OK se zobrazí dialogové okno, ve kterém vybereme, které datové zdroje chceme využít. Jednotlivé "zdroje" se v terminologii Power BI označují jako `query` (dotazy).
 
-::fig[Notebook]{src=assets/vyber_zdroju.png size=60}
+::fig[Notebook]{src=assets/vyber_zdroju.png size=70}
 
 Pokud vybereme všechny, uvidíme v levé části okna každý ze zdrojů jako samostatnou položku v menu, kterou si můžeme zobrazit.
 
-::fig[Notebook]{src=assets/zobrazeni_zdroju.png size=40}
+::fig[Notebook]{src=assets/zobrazeni_zdroju.png size=60}
 
 Nyní bychom mohli pomocí nástrojů Power Query mohli provést stejné transformace (propojení zdrojů, filtrování, případně agregace), abychom se dostali k obdobným výsledkům jako v předchozí části. Níže je například vidět dialog na pro spojení jednotlivých datových souborů.
 
