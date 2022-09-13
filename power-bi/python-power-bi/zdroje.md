@@ -34,7 +34,7 @@ U tržeb často sledujeme kumulativní součet, který sleduje nárůst tržeb f
 
 Kumulativní součty musíme vytvářet pro konkrétní prvky hiearchie. Nejčastěji sledujeme tržby po měsících, vybereme tedy pole `date - Month`.
 
-::fig[Notebook]{src=assets/running_total.png size=90}
+::fig[Notebook]{src=assets/running_total.png size=70}
 
 Tím získáme graf kumulativního součtu tržeb za jednotlivé dny.
 

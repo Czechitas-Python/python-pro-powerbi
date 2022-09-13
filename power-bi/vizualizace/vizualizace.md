@@ -2,7 +2,7 @@
 
 S pomocí Pythonu můžeme přidat i vizualizace, které budou interaktivně využívat data z dotazů. Pro vytvoření vizualizace klikneme v nabídce vizualizací na možnost `Python visual`. Následně v menu vpravo vybereme sloupce, se kterými chceme pracovat. Pro vybrané sloupce je vhodné nastavit agregaci jako průměr, abychom nemuseli agregaci řešit v kódu.
 
-![graf_agregace](assets/graf_agregace.png){.fig}
+::fig[Notebook]{src=assets/graf_agregace.png}
 
 Následně se nám zpřístupní editor kódu.
 

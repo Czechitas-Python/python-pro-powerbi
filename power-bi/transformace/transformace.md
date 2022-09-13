@@ -6,17 +6,17 @@ Tabulka má data zadaná jako čísla - číslo roku a číslo měsíce. Abychom
 
 Nejprve přidáme sloupec s datem. Klikneme na tlačítko `Custom column`, které nám umožní přidat sloupec s hodnotou spočítanou na základě ostatních funkcí. V počítaných sloupcích můžeme využít balík více než 700 funkcí, které jsou popsány [v dokumentaci](https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference). V našem případě využijeme funkci [#datetime](https://docs.microsoft.com/en-us/powerquery-m/sharpdatetime).
 
-![custom_column](assets/custom_column.png){.fig}
+::fig[Notebook]{src=assets/custom_column.png size=60}
 
 Po zavolání funkce bychom měli zkontrolovat typ hodnoty ve sloupci. Pokud není nastaven jako `Date`, provedeme převod pomocí menu `Change Type`.
 
-![change_type](assets/change_type.png){.fig}
+::fig[Notebook]{src=assets/change_type.png}
 
 Jako poslední krok spojíme obě tabulky dohromady. Nejjednodušší je použití tlačítka `Append Queries`, což je obdoba operace UNION v jazyce SQL nebo funkce `concat()` v modulu `pandas`. 
 
 Nyní můžeme přidat vizualizaci `Lined and Stacked column chart` a porovnat, nakolik se obchodníkům daří plnit obchodní plán.
 
-![change_type](assets/sales_plan_vs_actual.png){.fig}
+::fig[Notebook]{src=assets/sales_plan_vs_actual.png size=40}
 
 ### Využití Pythonu jako zdroje
 
@@ -26,15 +26,15 @@ Ve skupině `Other` vybereme jako zdroj `Python script`. Budeme opět využívat
 
 Po stisknutí tlačítka OK se zobrazí dialogové okno, ve kterém vybereme, které datové zdroje chceme využít. Jednotlivé "zdroje" se v terminologii Power BI označují jako `query` (dotazy).
 
-![vyber_zdroju](assets/vyber_zdroju.png){.fig}
+::fig[Notebook]{src=assets/vyber_zdroju.png size=60}
 
 Pokud vybereme všechny, uvidíme v levé části okna každý ze zdrojů jako samostatnou položku v menu, kterou si můžeme zobrazit.
 
-![zobrazeni_zdroju](assets/zobrazeni_zdroju.png){.fig}
+::fig[Notebook]{src=assets/zobrazeni_zdroju.png size=40}
 
 Nyní bychom mohli pomocí nástrojů Power Query mohli provést stejné transformace (propojení zdrojů, filtrování, případně agregace), abychom se dostali k obdobným výsledkům jako v předchozí části. Níže je například vidět dialog na pro spojení jednotlivých datových souborů.
 
-![spojeni_dat](assets/spojeni_dat.png){.fig}
+::fig[Notebook]{src=assets/spojeni_dat.png size=90}
 
 Efektivnější ale bude využít již připravený kód v jazyce Python a v Power BI pracovat až s připravenými výsledky. Smažme tedy všechny vytvořené dotazy a přidejme nový skript, ze kterého vybereme pouze dotaz `maturita`.
 
@@ -55,5 +55,5 @@ agregace budou vypočteny automaticky při tvorbě vizualizací. Proto klikneme 
 
 *Poznámka:* Pokud bychom se k editaci skriptu chtěli vrátit, klikneme na ikonku ozubeného kola v řádku `Source` v panelu napravo.
 
-![editace_skriptu](assets/editace_skriptu.png){.fig}
+::fig[Notebook]{src=assets/editace_skriptu.png}
 
