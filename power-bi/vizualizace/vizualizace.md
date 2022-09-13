@@ -50,10 +50,6 @@ plt.xticks(range(df_actual_pivot.shape[1]), df_actual_pivot.columns)
 plt.yticks(range(df_actual_pivot.shape[0]), df_actual_pivot.index)
 
 plt.imshow(df_actual_pivot, cmap ="viridis")
-for i in range(df_actual_pivot.shape[0]):
-    for j in range(df_actual_pivot.shape[1]):
-        text = ax.text(j, i, df_actual_pivot.iloc[i, j],
-                       ha="center", va="center", color="w")
 plt.show()
 ```
 
@@ -61,13 +57,16 @@ plt.show()
 
 Modul `seaborn` je nadstavbou modulu `matplotlib`, který umožňuje vytvořit některé typy vizualizací jednodušeji. Příkladem může být právě teplotní mapa s popisky, jejíž vytváření v `matplotlib` je poněkud pracné. Galerie typů vizualizací, které jsou v modulu `seaborn` k dispozici, je na [oficiálním webu](https://seaborn.pydata.org/examples/index.html).
 
-Modul `seaborn` musíme nejprve importovat. Stejným způsobem jako výše, tj. s využitím funkce `pivot_table()`, vytvoříme kontingenční tabulku. Dále pak použijeme funkci `heatmap` pro vytvoření teplotní mapy. Pomocí parametru `annot` nastavíme, zda chceme zobrazit jednotlivé hodnoty. Pomoc parametru `fmt` pak lze nastavit formátování čísla. Např. `fmt=".0f"` zobrazí řetězec bez desetinných čísel.
+Modul `seaborn` musíme nejprve importovat. Stejným způsobem jako výše, tj. s využitím funkce `pivot_table()`, vytvoříme kontingenční tabulku. Dále pak použijeme funkci `heatmap` pro vytvoření teplotní mapy. Pomocí parametru `annot` nastavíme, zda chceme zobrazit jednotlivé hodnoty jako popisky polí. Pomoc parametru `fmt` pak lze nastavit formátování čísla. Např. `fmt=".0f"` zobrazí řetězec bez desetinných čísel.
+
+Pomocí parametru `cmap` můžeme nastavit barevné schéma. Modul `seaborn` čerpá barevná schémata z modulu `matplotlib`, který má barevná schémata popsaná [v dokumentaci](https://matplotlib.org/stable/tutorials/colors/colormaps.html). Můžeme například zvolit schéma `YlGn`, což je přechod žluté a zelené barvy.
 
 ```py
 import matplotlib.pyplot as plt
 import seaborn
 
 df_actual_pivot = pandas.pivot_table(dataset, values="ip_address", index="marketing_channel", columns="age_group", aggfunc=len)
-seaborn.heatmap(df_actual_pivot, annot=True, fmt=".0f")
+seaborn.heatmap(df_actual_pivot, annot=True, fmt=".0f", cmap="YlGn")
 plt.show()
+
 ```

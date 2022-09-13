@@ -30,7 +30,7 @@ Po stisknutí tlačítka OK se zobrazí dialogové okno, ve kterém vybereme, kt
 
 Pokud vybereme všechny, uvidíme v levé části okna každý ze zdrojů jako samostatnou položku v menu, kterou si můžeme zobrazit.
 
-::fig[Notebook]{src=assets/zobrazeni_zdroju.png size=60}
+::fig[Notebook]{src=assets/zobrazeni_zdroju.png size=70}
 
 Nyní bychom mohli pomocí nástrojů Power Query mohli provést stejné transformace (propojení zdrojů, filtrování, případně agregace), abychom se dostali k obdobným výsledkům jako v předchozí části. Níže je například vidět dialog na pro spojení jednotlivých datových souborů.
 
