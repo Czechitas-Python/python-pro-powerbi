@@ -6,6 +6,8 @@ S pomocí Pythonu můžeme přidat i vizualizace, které budou interaktivně vyu
 
 Následně se nám zpřístupní editor kódu.
 
+### Použití modulu matplotlib
+
 Pro vytvoření obrázku a souřadnicových os použijeme funkci `subplots()`. Pokud nezadáme žádné parametry, `matplotlib` vytvoří jednu souřadnicovou osu, tj. počítá pouze s jedním grafem na obrázek.
 
 ```py
@@ -52,5 +54,20 @@ for i in range(df_actual_pivot.shape[0]):
     for j in range(df_actual_pivot.shape[1]):
         text = ax.text(j, i, df_actual_pivot.iloc[i, j],
                        ha="center", va="center", color="w")
+plt.show()
+```
+
+### Použití modulu seaborn
+
+Modul `seaborn` je nadstavbou modulu `matplotlib`, který umožňuje vytvořit některé typy vizualizací jednodušeji. Příkladem může být právě teplotní mapa s popisky, jejíž vytváření v `matplotlib` je poněkud pracné. Galerie typů vizualizací, které jsou v modulu `seaborn` k dispozici, je na [oficiálním webu](https://seaborn.pydata.org/examples/index.html).
+
+Modul `seaborn` musíme nejprve importovat. Stejným způsobem jako výše, tj. s využitím funkce `pivot_table()`, vytvoříme kontingenční tabulku. Dále pak použijeme funkci `heatmap` pro vytvoření teplotní mapy. Pomocí parametru `annot` nastavíme, zda chceme zobrazit jednotlivé hodnoty. Pomoc parametru `fmt` pak lze nastavit formátování čísla. Např. `fmt=".0f"` zobrazí řetězec bez desetinných čísel.
+
+```py
+import matplotlib.pyplot as plt
+import seaborn
+
+df_actual_pivot = pandas.pivot_table(dataset, values="ip_address", index="marketing_channel", columns="age_group", aggfunc=len)
+seaborn.heatmap(df_actual_pivot, annot=True, fmt=".0f")
 plt.show()
 ```

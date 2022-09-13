@@ -6,11 +6,11 @@ Před začátkem práce je vhodné zkontrolovat nastavení Power BI a propojení
 
 Power BI obvykle zvládne najít instalaci Pythonu. Před začátkem práce je ale dobré si nastavení zkontrolovat. Otevřeme si menu `File -> Options and Settings -> Options` a v dialogovém okně zvolíme `Python Scripting`. V menu `Detected Python home directories` je přehled instalací Pythonu, které byly Power BI detekovány.
 
-![vyber_instalaci](assets/vyber_instalaci.png){.fig}
+::fig[Notebook]{src=assets/vyber_instalaci.png}
 
 Pokud není požadovaná instalace na výběr, můžeme zvolit možnost `Other` a zadat adresář s požadovanou instalací ručně.
 
-![vyber_instalaci_other](assets/vyber_instalaci_other.png){.fig}
+::fig[Notebook]{src=assets/vyber_instalaci_other.png}
 
 ### Příklady užití
 

@@ -6,7 +6,7 @@ lessons:
     link: python-power-bi
     brief: Projdeme si základy práce v Power BI a jaké jsou možnosti zapojení Pythonu
   - title: Zdroje a transformace
-    link: zdroje-transformace
+    link: transformace
     brief: Podíváme se na zdroje dat, které jsou k dispozici, jak provádět transformaci dat a jak využití Python
   - title: Vizualizaci
     link: vizualizace
