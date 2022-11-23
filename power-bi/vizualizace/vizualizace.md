@@ -20,7 +20,7 @@ Pro data o registracích uživatelů provedeme porovnání, jaké marketingové 
 ```py
 import pandas
 dataset = pandas.read_json("https://raw.githubusercontent.com/pesikj/progr2-python/master/python-pro-data-1/power-bi/assets/user_registration.json")
-df_actual_pivot = pandas.pivot_table(dataset, values="age_group", index="marketing_channel", columns="ip_address", aggfunc=len)
+df_actual_pivot = pandas.pivot_table(dataset, columns="age_group", index="marketing_channel", values="ip_address", aggfunc=len)
 print(df_actual_pivot)
 ```
 
