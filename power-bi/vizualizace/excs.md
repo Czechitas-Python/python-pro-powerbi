@@ -1,6 +1,6 @@
 
 ## Cvičení
-::exc[excs>krabicovy-graf]
+::exc[excs/krabicovy-graf]
 
 ## Bonusové cvičení
-::exc[excs>dalsi-vizualizace]
+::exc[excs/dalsi-vizualizace]
